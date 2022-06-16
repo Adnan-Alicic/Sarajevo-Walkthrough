@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.Zemaljski"
+             Title="Zemaljski muzej">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <BoxView x:Name="bgGradient">
+                    <BoxView.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#a6a6a6"  Offset="0.7"/>
+                            <GradientStop Color="#a6a6a6" Offset="0.7"/>
+                            <GradientStop Color="#a6a6a6" Offset="0.7"/>
+                            <GradientStop Color="#c7c7c7" Offset="0.7"/>
+                            <GradientStop Color="#c7c7c7" Offset="0.7"/>
+                            <GradientStop Color="#c7c7c7" Offset="0.7"/>
+                        </LinearGradientBrush>
+                    </BoxView.Background>
+                </BoxView>
+                <StackLayout>
+                    <Image Source="zemaljski.jpg"/>
+                    <Label HorizontalTextAlignment="Start" Text="Quick description:" TextColor="Black" Padding="10,10" FontAttributes="Bold" FontSize="20"/>
+                    <Label HorizontalTextAlignment="Start" TextColor="Black" FontSize="20" Padding="10,10" Text="The National Museum of Bosnia and Herzegovina  is located in central Sarajevo, the capital of Bosnia and Herzegovina.
+It was established in 1888, having originally been conceived around 1850. In 1913, the museum building was expanded by the Czech architect Karel Pařík who designed a structure of four symmetric pavilions with a facade in the Italian Renaissance Revival style. The four pavilions contain the departments of archaeology, ethnology, natural history, and a library. After being closed for several years due to heavy damage in the recent war, the museum has re-opened and is in the process of mounting new and pre-existing exhibits. The museum is a cultural and scientific institution covering a wide range of areas including archaeology, art history, ethnology, geography, history and natural history. The Sarajevo Haggadah, an illuminated manuscript and the oldest Sephardic Jewish document in the world issued in Barcelona around 1350, containing the traditional Jewish Haggadah, is held at the museum.
+It has a library with 162,000 volumes. 
+"/>
+                    <Button Text="Take me there!"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                            Font="20"
+                            CornerRadius="70"
+                            
+                            BackgroundColor="DarkGray"
+                            TextColor="Maroon"
+                            FontAttributes="Bold"
+                Clicked="Button_Clicked" />
+                    
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

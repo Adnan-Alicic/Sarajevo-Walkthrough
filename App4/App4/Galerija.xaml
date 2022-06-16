@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.Galerija"
+             Title="Umjetnička galerija">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <BoxView x:Name="bgGradient">
+                    <BoxView.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#a6a6a6"  Offset="0.7"/>
+                            <GradientStop Color="#a6a6a6" Offset="0.7"/>
+                            <GradientStop Color="#a6a6a6" Offset="0.7"/>
+                            <GradientStop Color="#c7c7c7" Offset="0.7"/>
+                            <GradientStop Color="#c7c7c7" Offset="0.7"/>
+                            <GradientStop Color="#c7c7c7" Offset="0.7"/>
+                        </LinearGradientBrush>
+                    </BoxView.Background>
+                </BoxView>
+                <StackLayout>
+                    <Image Source="galerija1.jpg"/>
+                    <Label HorizontalTextAlignment="Start" Text="Quick description:" TextColor="Black" Padding="10,10" FontAttributes="Bold" FontSize="20"/>
+
+                    <Label HorizontalTextAlignment="Start" TextColor="Black" FontSize="20" Padding="10,10" Text="The Art Gallery of Bosnia and Herzegovina, founded in 1946, studies and preserves over 6,000 works of modern and contemporary art, representing, from the point of view of visual art, the oldest and most important museum institution in Bosnia and Herzegovina. The building in which it is located today was built around 1912 as a department store of Yeshua and Mojca Salom. It is presumed to be the work of Josip Vancaš. According to its characteristics, it belongs to the late works of historicism, and in addition to the Renaissance-Classicist forms, elements of Art Nouveau can also be recognized on it. During the aggression and siege of Sarajevo, the building suffered severe damage due to shelling.
+After the end of the war, the Art Gallery of BiH, thanks to the Government of the Swiss Confederation and its own efforts, managed to find donors for the almost complete rehabilitation of its facility.
+"/>
+
+                    <Button Text="Take me there!"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                            Font="20"
+                            CornerRadius="70"
+                            
+                            BackgroundColor="DarkGray"
+                            TextColor="Maroon"
+                            FontAttributes="Bold"
+                            
+                            
+                Clicked="Button_Clicked" />
+
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

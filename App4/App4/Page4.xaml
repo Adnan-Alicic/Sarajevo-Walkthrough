@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.Page4">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <BoxView x:Name="bgGradient">
+                    <BoxView.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="Black"  Offset="0.1"/>
+                            
+                            
+                            <GradientStop Color="Gray" Offset="0.2"/>
+                            <GradientStop Color="Black" Offset="0.3"/>
+                            <GradientStop Color="Black"  Offset="0.4"/>
+                            <GradientStop Color="Black" Offset="0.6"/>
+                            <GradientStop Color="Black" Offset="0.5"/>
+                            
+                            <GradientStop Color="Gray" Offset="0.6"/>
+                            <GradientStop Color="DarkGray" Offset="0.6"/>
+                            <GradientStop Color="DarkGray" Offset="0.6"/>
+                        </LinearGradientBrush>
+                    </BoxView.Background>
+                </BoxView>
+                <StackLayout>
+                    <Label Text="Sarajevo Walkthrough!" FontAttributes="Bold" FontSize="Title" TextColor="White" HorizontalTextAlignment="Center" Padding="40,20,40,20"/>
+
+
+
+                    <Label Text=" 1° Sarajevo Walkthrough is a tourist site with destinations in Sarajevo - unique tourist destinations with a rich cultural, historical and natural heritage. Sarajevo Walkthrough offers information on what is happening in Sarajevo, and users on the site can find information on various attractions offered by Sarajevo." TextColor="White"  Grid.Column="0" Grid.Row="0" FontSize="19" Padding="10,0,20,0" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" />
+
+                    <Label Text=" 2° Each image in the application is privately owned and personally photographed and lays claim to them, including the logo. " TextColor="White"  Grid.Column="0" Grid.Row="0" FontSize="19" Padding="10,20,20,0" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" />
+
+                    <Label Text=" 3° Updated version with new locations (White and Yellow fortress etc.) is coming soon! " TextColor="White"  Grid.Column="0" Grid.Row="0" FontSize="19" Padding="10,20,20,0" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" />
+
+                    <Label Text=" 4° Contact us on the website that will soon be online @ www.sarajevowalkthrough.com as well on:" TextColor="White"  Grid.Column="0" Grid.Row="0" FontSize="19" Padding="10,20,20,0" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" />
+
+                    <Label Text=" E-mail: sawalkthrough@gmail.com," TextColor="White"  Grid.Column="0" Grid.Row="0" FontSize="19" Padding="90,0,20,0" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" />
+
+                    <Label Text=" Phone: +387 33 000 000" TextColor="White"  Grid.Column="0" Grid.Row="0" FontSize="19" Padding="90,0,20,0" HorizontalTextAlignment="Start" VerticalTextAlignment="Start" />
+
+
+
+
+
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

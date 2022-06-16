@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.Saborna"
+             Title="Saborna crkva">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <BoxView x:Name="bgGradient">
+                    <BoxView.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#a6a6a6"  Offset="0.7"/>
+                            <GradientStop Color="#a6a6a6" Offset="0.7"/>
+                            <GradientStop Color="#a6a6a6" Offset="0.7"/>
+                            <GradientStop Color="#c7c7c7" Offset="0.7"/>
+                            <GradientStop Color="#c7c7c7" Offset="0.7"/>
+                            <GradientStop Color="#c7c7c7" Offset="0.7"/>
+                        </LinearGradientBrush>
+                    </BoxView.Background>
+                </BoxView>
+                <StackLayout>
+                    <Image Source="pravoslavna_crkva1.jpg"/>
+                    <Label HorizontalTextAlignment="Start" Text="Quick description:" TextColor="Black" Padding="10,10" FontAttributes="Bold" FontSize="20"/>
+
+                    <Label HorizontalTextAlignment="Start" TextColor="Black" FontSize="20" Padding="10,10" Text="The Cathedral in Sarajevo is one of the largest Orthodox churches in the Balkans. The church is located in the city center, next to the Faculty of Economics, on the right side of the river Miljacka. The Cathedral Church in Sarajevo is dedicated to the birth of the Most Holy Mother of God. The decision to build it was made at the beginning of 1859, and the construction itself began in 1863 and lasted 11 years. The works were completed on May 1, 1874. The permission to build the church was issued by Sultan Abdul Aziz in order to alleviate the criticism from Europe due to religious intolerance. The church itself was built with voluntary contributions from the citizens of Sarajevo and surrounding places, as well as Dubrovnik, Belgrade, Trieste and Vienna merchants. There is a record that the sultan himself was one of those who made his contribution. Today's appearance of the church is slightly different from the original. The cathedral is built of stone. Basically, the three-nave basilica is combined with an inscribed cross and has five domes. The church is 37 m long, 22.5 m wide. The walls are 15.5 m high, the middle dome 34 m, and the small ones 20 m. It was originally covered with a lead roof, but during the First World War the Austrians removed the lead, including the bells and covered the church with tin. After that, in 1921, the first reconstruction was carried out when electricity was introduced into the church and when new bells weighing 2,800 kg, 1,600 kg and 750 kg, as well as a copper roof were installed. "/>
+
+                    <Button Text="Take me there!"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                            Font="20"
+                            CornerRadius="70"
+                            
+                            BackgroundColor="DarkGray"
+                            TextColor="Maroon"
+                            FontAttributes="Bold"
+                            
+                            
+                Clicked="Button_Clicked" />
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

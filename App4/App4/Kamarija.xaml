@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.Kamarija"
+             Title="Kamarija">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <BoxView x:Name="bgGradient">
+                    <BoxView.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#a6a6a6"  Offset="0.7"/>
+                            <GradientStop Color="#a6a6a6" Offset="0.7"/>
+                            <GradientStop Color="#a6a6a6" Offset="0.7"/>
+                            <GradientStop Color="#c7c7c7" Offset="0.7"/>
+                            <GradientStop Color="#c7c7c7" Offset="0.7"/>
+                            <GradientStop Color="#c7c7c7" Offset="0.7"/>
+                        </LinearGradientBrush>
+                    </BoxView.Background>
+                </BoxView>
+                <StackLayout>
+                    <Image Source="kamarija1.jpg"/>
+                    <Label HorizontalTextAlignment="Start" Text="Quick description:" TextColor="Black" Padding="10,10" FontAttributes="Bold" FontSize="20"/>
+
+                    <Label HorizontalTextAlignment="Start" TextColor="Black" FontSize="20" Padding="10,10" Text="Caffe Kamarija - Point of View is built in the style of a tree house with a view of the whole of the Sarajevo. The establishment of this restaurant is out of a personal need for a pleasant and relaxed place, where surrounded by nature we get the opportunity to get away from everyday events on the main streets of Sarajevo, and still stay close enough to the beloved city, looking at it from a different, perhaps most beautiful perspective. Kamarija Point of View is located not far from the city attraction Žuta Tabija, in a street that passes under the famous barracks Jajce, famous for the scene from the cult movie Walter defends Sarajevo."/>
+
+                    <Button Text="Take me there!"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                            Font="20"
+                            CornerRadius="70"
+                            
+                            BackgroundColor="DarkGray"
+                            TextColor="Maroon"
+                            FontAttributes="Bold"
+                            
+                            
+                Clicked="Button_Clicked" />
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

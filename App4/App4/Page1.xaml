@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.Page1">
+    <ContentPage.Content>
+        <ScrollView x:Name="MainScroll" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Grid>
+                <BoxView x:Name="bgGradient">
+                    <BoxView.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="Gray" Offset="0.2"/>
+                            <GradientStop Color="Gray" Offset="0.4"/>
+                            <GradientStop Color="Gray" Offset="0.5"/>
+                            <GradientStop Color="Gray" Offset="0.7"/>
+                        </LinearGradientBrush>
+                    </BoxView.Background>
+                </BoxView>
+
+                <StackLayout>
+                    <Image Source="prva.jpg" HorizontalOptions="CenterAndExpand"/>
+                    <Label Text="About" FontSize="Title" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Center" Padding="40,20,40,0"/>
+                    <Label Text="Sarajevo is capital city of Bosnia and Herzegovina. Its population is little less than half a million which also makes it the biggest city in the country.
+
+The city has long and rich history that has been marked by many different cultures. Having in mind this, Sarajevo and its inhabitants proud themselves with the traditional religious diversity, having adherents of Islam, Orthodoxy, Catholicism and Judaism coexisting there for centuries.
+Sarajevo is a city that encompasses the very best of both East and West and it is rarely seen anywhere in the world that Orthodox and a Catholic church, a mosque and a synagogue are found within easy walking distance of each other. The largest travel guide book and digital media publisher in the world, Lonely Planet, named Sarajevo as one of the top ten cities to visit in 2010. The people in Sarajevo are very friendly and there is very little crime."  FontSize="19" Padding="30,0,30,0" TextColor="White" HorizontalTextAlignment="Center"/>
+
+                    <Label Text="History" FontSize="Title" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Center" Padding="40,20,40,0"/>
+
+                    <Label Text="The area of Sarajevo has been continiously settled since the neolithic age. The most famous example of a Neolithic settlement in the Sarajevo area is that of the Butmir culture, from which unique ceramics and pottery designs were found.
+The next prominent inhabitants of Sarajevo were the Illyrians who considered most of the West Balkans as their homeland. In 9 A.D. Illyrians were defeated by the Romans who occupied the area of Bosnia and Herzegovina. Settlers who followed after Romans were Slavs in the 7th century.
+The modern city of Sarajevo as we know it today arose in the 15th century, after it was conquered by the Ottoman Empire. The first Ottoman governor of Bosnia Province, Isa-Beg Ishaković, transformed the settlement into a city by building a number of key objects, including a mosque, a closed marketplace, a public bath, a hostel, and of course the governor's castle (Saray) which gave the city its present name. With the improvements Sarajevo quickly grew into the largest city in the region. At its height, Sarajevo was the biggest and most important Ottoman city in the Balkans after Istanbul itself.
+But that changed in 169 when Prince Eugene of Savoy led a raid on Sarajevo, setting the city on fire. In just one day, nearly the whole city was destroyed.The city was later rebuilt, but never fully recovered from the destruction.
+In 1878, the Austria-Hungarian Empire conquered Bosnia and Herzegovina and annexed it completely in 1908. Sarajevo was industrialized by Austria-Hungary, who used the city as a testing area for new inventions, such as tramways, before installing them in Vienna.
+During the 20th century, Sarajevo has attracted international attention several times: In 1914 it was the site of the assassination of Archduke Franz Ferdinand and his wife Sophia that sparked World War I, while seventy years later it became the host city of the 1984 Winter Olympics. Sarajevo also underwent the longest siege in post WWII military history during the 1992-1995 aggression by the Serbian forces.
+Today the city is completely recovered and represents a major center of culture and economic development in Bosnia and Herzegovina.
+" FontSize="19" TextColor="White" HorizontalTextAlignment="Center" Padding="30,0,30,0"/>
+                    <Label Text="Interesting facts" FontSize="Title" FontAttributes="Bold" TextColor="White" HorizontalTextAlignment="Center" Padding="40,20,40,0"/>
+                    <Label Text="Sarajevo had street lighting before Vienna, as Austro Hungarians had doubts about the safety of electricity and deemed it wiser to first test it in the colonies. Sarajevo was also the first city in Europe and the second city in the world to have a full-time operational electric tram network running through the city, the first being San Francisco." FontSize="19" TextColor="White" HorizontalTextAlignment="Center" Padding="30,0,30,0"/>
+                    
+                </StackLayout>
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.Vijecnica"
+             Title="Vijecnica">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <BoxView x:Name="bgGradient">
+                    <BoxView.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#a6a6a6"  Offset="0.7"/>
+                            <GradientStop Color="#a6a6a6" Offset="0.7"/>
+                            <GradientStop Color="#a6a6a6" Offset="0.7"/>
+                            <GradientStop Color="#c7c7c7" Offset="0.7"/>
+                            <GradientStop Color="#c7c7c7" Offset="0.7"/>
+                            <GradientStop Color="#c7c7c7" Offset="0.7"/>
+                        </LinearGradientBrush>
+                    </BoxView.Background>
+                </BoxView>
+                <StackLayout>
+                    <Image Source="vijecnica3.jpg"/>
+                    <Label HorizontalTextAlignment="Start" Text="Quick description:" TextColor="Black" Padding="10,10" FontAttributes="Bold" FontSize="20"/>
+                    <Label HorizontalTextAlignment="Start" TextColor="Black" FontSize="20" Padding="10,10" Text="Sarajevo City Hall, known as Vijećnica, is located in the city of Sarajevo. It was designed in 1891 by the Czech architect Karel Pařík, but criticisms by the minister, Baron Benjamin Kallay, caused him to stop working on the project. It was initially the largest and most representative building of the Austro-Hungarian period in Sarajevo and served as the city hall. On 25 August 1992, Serbian shelling during the Siege of Sarajevo caused the complete destruction of the library; among the losses were about 700 manuscripts and incunabula and a unique collection of Bosnian serial publications, some from the middle of the 19th century Bosnian cultural revival. Before the attack, the library held 1.5 million volumes and over 155,000 rare books and manuscripts. Some citizens and librarians tried to save some books while they were under sniper fire, at least one person died. The majority of the books could not be saved from the flames. The building was reopened on May 9, 2014."/>
+
+                    <Button Text="Take me there!"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                            Font="20"
+                            CornerRadius="70"
+                            
+                            BackgroundColor="DarkGray"
+                            TextColor="Maroon"
+                            FontAttributes="Bold"
+                            
+                            
+                Clicked="Button_Clicked" />
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

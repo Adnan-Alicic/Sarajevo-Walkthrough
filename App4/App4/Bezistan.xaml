@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.Bezistan"
+             Title="Gazi Husrev-begov  bezistan">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <BoxView x:Name="bgGradient">
+                    <BoxView.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#a6a6a6"  Offset="0.7"/>
+                            <GradientStop Color="#a6a6a6" Offset="0.7"/>
+                            <GradientStop Color="#a6a6a6" Offset="0.7"/>
+                            <GradientStop Color="#c7c7c7" Offset="0.7"/>
+                            <GradientStop Color="#c7c7c7" Offset="0.7"/>
+                            <GradientStop Color="#c7c7c7" Offset="0.7"/>
+                        </LinearGradientBrush>
+                    </BoxView.Background>
+                </BoxView>
+                <StackLayout>
+                    <Image Source="bezistan1.jpg"/>
+                    <Label HorizontalTextAlignment="Start" Text="Quick description:" TextColor="Black" Padding="10,10" FontAttributes="Bold" FontSize="20"/>
+
+                    <Label HorizontalTextAlignment="Start" TextColor="Black" FontSize="20" Padding="10,10" Text="Gazi Husrev-beg's bezistan is one of the preserved bezistan in Sarajevo, which still serves its purpose-trade. Bezistan is part of the endowment of Gazi Husrev-beg. It was built in 1555 in the immediate vicinity of the Kursumli Madrasa, the Bey's Mosque and the Clock Tower, with which it is connected by an eastern entrance. It is rectangular in shape with entrances, which border a 109 m long street in which small shops are located. Gazi Husrev-beg (Zlatarska) Street runs parallel along the bezistan. Dubrovnik masters took part in the construction. Due to the slightly lower temperature achieved by the construction below the level of the surrounding streets, the original purpose of the bezistan was to trade in groceries. This still makes shopping on warm, summer days, enjoyable. With its appearance, Gazi Husrev-beg's bezistan is reminiscent of the Kapala Bazaar and the bezistan in Istanbul or the souk in the cities to the east. Gazi Husrev-beg's bezistan was declared a national monument of Bosnia and Herzegovina in 2006."/>
+
+                    <Button Text="Take me there!"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                            Font="20"
+                            CornerRadius="70"
+                            
+                            BackgroundColor="DarkGray"
+                            TextColor="Maroon"
+                            FontAttributes="Bold"
+                            
+                            
+                Clicked="Button_Clicked" />
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

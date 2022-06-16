@@ -1,0 +1,113 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Vilsonovo.xaml.cs">
+      <DependentUpon>Vilsonovo.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Galerija.xaml.cs">
+      <DependentUpon>Galerija.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Bezistan.xaml.cs">
+      <DependentUpon>Bezistan.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Historijski.xaml.cs">
+      <DependentUpon>Historijski.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Trebevic.xaml.cs">
+      <DependentUpon>Trebevic.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Kamarija.xaml.cs">
+      <DependentUpon>Kamarija.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Tržnica.xaml.cs">
+      <DependentUpon>Tržnica.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Gimnazija.xaml.cs">
+      <DependentUpon>Gimnazija.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Alipašina.xaml.cs">
+      <DependentUpon>Alipašina.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Katedrala.xaml.cs">
+      <DependentUpon>Katedrala.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Saborna.xaml.cs">
+      <DependentUpon>Saborna.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Zemaljski.xaml.cs">
+      <DependentUpon>Zemaljski.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Vijecnica.xaml.cs">
+      <DependentUpon>Vijecnica.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Vjecna.xaml.cs">
+      <DependentUpon>Vjecna.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Festina.xaml.cs">
+      <DependentUpon>Festina.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Narodno.xaml.cs">
+      <DependentUpon>Narodno.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Zemaljski.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Vijecnica.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Alipašina.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Glavna.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="GlavnaDetail.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="GlavnaFlyout.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Saborna.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Katedrala.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Page1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Page3.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Page4.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Vjecna.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Festina.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Narodno.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

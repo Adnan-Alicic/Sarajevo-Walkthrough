@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.Page3">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <BoxView x:Name="bgGradient">
+                    <BoxView.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="Black"  Offset="0.1"/>
+                            <GradientStop Color="Gray" Offset="0.2"/>
+                            <GradientStop Color="Gray" Offset="0.3"/>
+                            <GradientStop Color="LightGray"  Offset="0.4"/>
+                            <GradientStop Color="Gray" Offset="0.5"/>
+                            <GradientStop Color="Black" Offset="0.7"/>
+                        </LinearGradientBrush>
+                    </BoxView.Background>
+                </BoxView>
+                <StackLayout>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="200"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="160"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="0"/>
+                            <RowDefinition Height="160"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="160"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="160"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="160"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="160"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="160"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="160"/>
+                           
+                        </Grid.RowDefinitions>
+                        <Image Source="vjecna_vatra1.jpg" Grid.Column="0" Grid.Row="0" HeightRequest="160" WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Ethernal Flame" TextColor="White" FontAttributes="Bold" Grid.Column="0" Grid.Row="1" FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
+                        <Image Source="vijecnica3.jpg" Grid.Column="1" Grid.Row="0" HeightRequest="160" WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="City Hall" TextColor="White" FontAttributes="Bold" Grid.Column="1" Grid.Row="1" FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
+                        <Image Source="zemaljski.jpg" Grid.Column="0" Grid.Row="3" HeightRequest="160" WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="National Museum" TextColor="White" FontAttributes="Bold" Grid.Column="0" Grid.Row="4" FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
+                        <Image Source="festina_lente1.jpg" Grid.Column="1" Grid.Row="3" HeightRequest="160" WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Festina Lente" TextColor="White" FontAttributes="Bold" Grid.Column="1" Grid.Row="4" FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
+                        <Image Source="pozoriste2.jpg" Grid.Column="0" Grid.Row="5" HeightRequest="160" WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="National Theatre" TextColor="White" FontAttributes="Bold" Grid.Column="0" Grid.Row="6" FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
+                        <Image Source="pravoslavna_crkva1.jpg" Grid.Column="1" Grid.Row="5" HeightRequest="160" WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_5"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Cathedral Church" TextColor="White" FontAttributes="Bold" Grid.Column="1" Grid.Row="6" FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
+                        <Image Source="katedrala1.jpg" Grid.Column="0" Grid.Row="7" HeightRequest="160" WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_6"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Catholic Church" TextColor="White" FontAttributes="Bold" Grid.Column="0" Grid.Row="8" FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
+                        <Image Source="alipasina1.jpg" Grid.Column="1" Grid.Row="7" HeightRequest="160" WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_7"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Alipaša's Mosque" TextColor="White" FontAttributes="Bold" Grid.Column="1" Grid.Row="8" FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
+
+
+                        <Image Source="gimnazija1.jpg" Grid.Column="0" Grid.Row="9" HeightRequest="160" WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_8"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="First Gymnasium" TextColor="White" FontAttributes="Bold" Grid.Column="0" Grid.Row="10" FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
+
+                        <Image Source="trznica1.jpg" Grid.Column="1" Grid.Row="9" HeightRequest="160" WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_9"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="City Market Place" TextColor="White" FontAttributes="Bold" Grid.Column="1" Grid.Row="10" FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
+
+                        <Image Source="kamarija1.jpg" Grid.Column="0" Grid.Row="11" HeightRequest="160" WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_10"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Kamarija" TextColor="White" FontAttributes="Bold" Grid.Column="0" Grid.Row="12" FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
+
+                        <Image Source="trebevic1.jpg" Grid.Column="1" Grid.Row="11" HeightRequest="160" WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_11"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Trebević Cable Car" TextColor="White" FontAttributes="Bold" Grid.Column="1" Grid.Row="12" FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
+
+                        
+                        
+                        <Image Source="historijski.jpg" Grid.Column="0" Grid.Row="13" HeightRequest="160" WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_12"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="History Museum" TextColor="White" FontAttributes="Bold" Grid.Column="0" Grid.Row="14" FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
+
+
+                        <Image Source="bezistan1.jpg" Grid.Column="1" Grid.Row="13" HeightRequest="160" WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_13"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Bezistan" TextColor="White" FontAttributes="Bold" Grid.Column="1" Grid.Row="14" FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
+
+
+
+
+                        <Image Source="galerija1.jpg" Grid.Column="0" Grid.Row="15" HeightRequest="160" WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_14"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="National Gallery" TextColor="White" FontAttributes="Bold" Grid.Column="0" Grid.Row="16" FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
+
+
+                        <Image Source="vilsonovo1.jpg" Grid.Column="1" Grid.Row="15" HeightRequest="160" WidthRequest="100" VerticalOptions="Start">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_15"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Wilson's Promenade" TextColor="White" FontAttributes="Bold" Grid.Column="1" Grid.Row="16" FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
+
+
+
+
+                    </Grid>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
+    
